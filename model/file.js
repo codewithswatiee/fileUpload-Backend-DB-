@@ -33,7 +33,7 @@ fileSchema.post("save", async function(doc) {
             from: `Swati`,
             to: doc.email,
             subject: "New File Uploaded",
-            html: `<h2>Hello</h2> <p> I Hate you <p>`,
+            html: `<h2>Hello</h2> <p> I Hate you <p> <a href=${doc.imageUrl}>Click here to view</a>`,
         })
 
         console.log(info);
